@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#f3e3a5"/>
+<ellipse cx="400" cy="335" rx="225" ry="75" fill="#9d7a25" opacity=".9"/>
+<circle cx="330" cy="285" r="72" fill="#9d7a25"/>
+<circle cx="485" cy="275" r="82" fill="#9d7a25" opacity=".92"/>
+<text x="400" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="bold" fill="#4e3426">Pie de Limón</text>
+<text x="400" y="445" text-anchor="middle" font-family="Arial" font-size="23" fill="#4e3426">La Migaja</text>
+</svg>

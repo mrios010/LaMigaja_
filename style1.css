@@ -1,0 +1,171 @@
+/* =========================================================
+   LA MIGAJA - ESTILOS PROPIOS
+   Bootstrap se encarga de la estructura general.
+   Este archivo personaliza la identidad visual.
+   ========================================================= */
+
+:root {
+    --miga-crema: #fff8ef;
+    --miga-cafe: #6f4e37;
+    --miga-cafe-oscuro: #4e3426;
+    --miga-acento: #c47a44;
+    --miga-texto: #3f3028;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--miga-texto);
+    background-color: #ffffff;
+}
+
+/* Logo */
+.logo {
+    width: 42px;
+    height: 42px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--miga-crema) !important;
+}
+
+.navbar-brand strong {
+    color: var(--miga-cafe-oscuro);
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    color: var(--miga-cafe) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--miga-acento) !important;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(135deg, #fff8ef, #f7eadc);
+}
+
+.hero-section h1 {
+    color: var(--miga-cafe-oscuro);
+}
+
+.hero-section .lead {
+    color: var(--miga-acento);
+    font-weight: 600;
+}
+
+.hero-text {
+    max-width: 560px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(78, 52, 38, 0.15);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--miga-cafe);
+    border-color: var(--miga-cafe);
+}
+
+.btn-primary:hover {
+    background-color: var(--miga-cafe-oscuro);
+    border-color: var(--miga-cafe-oscuro);
+}
+
+.btn-outline-primary {
+    color: var(--miga-cafe);
+    border-color: var(--miga-cafe);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--miga-cafe);
+    border-color: var(--miga-cafe);
+}
+
+/* Tarjetas de categorías */
+.category-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(78, 52, 38, 0.16) !important;
+}
+
+.category-image {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Opiniones */
+.opiniones-section {
+    background-color: var(--miga-crema);
+}
+
+.opinion-card {
+    border: none;
+    border-left: 5px solid var(--miga-acento);
+    border-radius: 12px;
+}
+
+.opinion-card p {
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.opinion-card strong {
+    color: var(--miga-cafe-oscuro);
+}
+
+/* Slogan final */
+.slogan-section {
+    background-color: var(--miga-cafe);
+    color: #ffffff;
+}
+
+.slogan-section h2 {
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--miga-cafe-oscuro);
+    color: #ffffff;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #f4c99f;
+}
+
+/* Ajustes para celular */
+@media (max-width: 767.98px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        max-height: 300px;
+    }
+}

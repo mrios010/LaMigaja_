@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#e8d0a8"/>
+<ellipse cx="400" cy="330" rx="230" ry="75" fill="#8c6339" opacity=".85"/>
+<circle cx="320" cy="275" r="75" fill="#8c6339"/><circle cx="480" cy="260" r="90" fill="#8c6339" opacity=".9"/>
+<text x="400" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#4e3426">Especialidades</text>
+<text x="400" y="445" text-anchor="middle" font-family="Arial" font-size="24" fill="#4e3426">La Migaja</text>
+</svg>

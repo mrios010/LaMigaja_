@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Migaja | Catálogo</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- ==================== NAVEGACIÓN ==================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.svg" alt="Logo de La Migaja" class="logo me-2">
+                    <strong>La Migaja</strong>
+                </a>
+
+                <!-- Botón del menú para celulares -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index1.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pedidos.html">Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== ENCABEZADO ==================== -->
+        <header class="catalogo-header py-5 text-center">
+            <div class="container">
+                <h1 class="fw-bold">Catálogo</h1>
+                <h2 class="h5 text-muted">Conoce nuestros productos</h2>
+                <p class="mt-3 mb-0">
+                    Elige tus favoritos y agrégalos a tu pedido.
+                </p>
+            </div>
+        </header>
+
+        <!-- ==================== NAVEGACIÓN DE CATEGORÍAS ==================== -->
+        <nav class="container py-4" aria-label="Categorías del catálogo">
+            <h2 class="h4 text-center mb-3">Nuestros productos</h2>
+
+            <div class="nav nav-pills justify-content-center gap-2">
+                <a class="nav-link" href="#dulce">Panadería Dulce y Biscochos</a>
+                <a class="nav-link" href="#pasteleria">Pastelería y Repostería</a>
+                <a class="nav-link" href="#salada">Panadería Salada y Blancos</a>
+                <a class="nav-link" href="#temporada">Temporada y Especialidades</a>
+            </div>
+        </nav>
+
+        <!-- ==================== PANADERÍA DULCE ==================== -->
+        <section id="dulce" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Panadería Dulce y Biscochos</h2>
+                <p class="text-muted mb-4">
+                    Panes dulces y bizcochos para acompañar cualquier momento.
+                </p>
+
+                <div class="row g-4">
+                    <!-- Chocolatín -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/chocolatin.svg" class="card-img-top product-image"
+                                 alt="Chocolatín">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Chocolatín</h3>
+                                <p class="card-text">
+                                    Rollo de hojaldre crujiente y mantequilloso, dorado por fuera y
+                                    relleno de barras de chocolate semiamargo derretido en su interior.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$25.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Chocolatín', 25, 'Panadería Dulce y Biscochos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concha -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/concha.svg" class="card-img-top product-image"
+                                 alt="Concha">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Concha</h3>
+                                <p class="card-text">
+                                    Bizcocho suave y esponjoso cubierto con una costra crujiente
+                                    de azúcar sabor vainilla o chocolate.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$20.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Concha', 20, 'Panadería Dulce y Biscochos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mantecada -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/mantecada.svg" class="card-img-top product-image"
+                                 alt="Mantecada">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Mantecada</h3>
+                                <p class="card-text">
+                                    Bizcocho esponjoso y mantecoso, horneado en un capacillo de papel.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$23.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Mantecada', 23, 'Panadería Dulce y Biscochos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rebanada -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/rebanada.svg" class="card-img-top product-image"
+                                 alt="Rebanada">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Rebanada</h3>
+                                <p class="card-text">
+                                    Rebanada de pan de bizcocho suave untada con crema de mantequilla
+                                    y espolvoreada con azúcar.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$19.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Rebanada', 19, 'Panadería Dulce y Biscochos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PASTELERÍA ==================== -->
+        <section id="pasteleria" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Pastelería y Repostería</h2>
+                <p class="text-muted mb-4">
+                    Opciones para celebrar y disfrutar algo especial.
+                </p>
+
+                <div class="row g-4">
+                    <!-- Red Velvet -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/red-velvet.svg" class="card-img-top product-image"
+                                 alt="Red Velvet">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Red Velvet</h3>
+                                <p class="card-text">
+                                    Pastel de textura aterciopelada y ligero sabor a cacao con su
+                                    característico color rojo, cubierto con betún de queso crema.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$350.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Red Velvet', 350, 'Pastelería y Repostería')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie de Limón -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/pie-limon.svg" class="card-img-top product-image"
+                                 alt="Pie de Limón">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Pie de Limón</h3>
+                                <p class="card-text">
+                                    Base crujiente de galleta o masa quebrada con un relleno
+                                    cremoso y ácido de limón.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$270.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Pie de Limón', 270, 'Pastelería y Repostería')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fudge -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/fudge.svg" class="card-img-top product-image"
+                                 alt="Fudge">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Fudge</h3>
+                                <p class="card-text">
+                                    Múltiples capas de bizcocho de chocolate húmedo, relleno y
+                                    cubierto con una cremosa y densa ganache de chocolate semiamargo.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$370.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Fudge', 370, 'Pastelería y Repostería')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pastel de Zanahoria -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/pastel-zanahoria.svg" class="card-img-top product-image"
+                                 alt="Pastel de Zanahoria">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Pastel de Zanahoria</h3>
+                                <p class="card-text">
+                                    Pastel de zanahoria con nueces y canela, cubierto y relleno
+                                    con un betún de queso crema.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$300.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Pastel de Zanahoria', 300, 'Pastelería y Repostería')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PANADERÍA SALADA ==================== -->
+        <section id="salada" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Panadería Salada y Blancos</h2>
+                <p class="text-muted mb-4">
+                    Los clásicos de pan blanco y opciones para acompañar tus comidas.
+                </p>
+
+                <div class="row g-4">
+                    <!-- Bolillo -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/bolillo.svg" class="card-img-top product-image"
+                                 alt="Bolillo">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Bolillo</h3>
+                                <p class="card-text">
+                                    El clásico pan blanco de corteza crujiente, miga suave y
+                                    esponjada, ideal para tortas o acompañar comidas.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$2.50</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Bolillo', 2.50, 'Panadería Salada y Blancos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telera -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/telera.svg" class="card-img-top product-image"
+                                 alt="Telera">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Telera</h3>
+                                <p class="card-text">
+                                    Pan blanco plano y ovalado con dos cortes, de miga abundante
+                                    y textura suave, perfecto para lunch y tortas.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$2.50</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Telera', 2.50, 'Panadería Salada y Blancos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Baguette -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/baguette.svg" class="card-img-top product-image"
+                                 alt="Baguette">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Baguette</h3>
+                                <p class="card-text">
+                                    Pan alargado de tradición francesa con corteza dorada y crujiente.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$20.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Baguette', 20, 'Panadería Salada y Blancos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cemita -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/cemita.svg" class="card-img-top product-image"
+                                 alt="Cemita">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Cemita</h3>
+                                <p class="card-text">
+                                    Pan redondo y abombado de corteza dorada y crujiente,
+                                    decorado con semillas de ajonjolí por encima.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$10.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Cemita', 10, 'Panadería Salada y Blancos')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TEMPORADA ==================== -->
+        <section id="temporada" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Temporada y Especialidades</h2>
+                <p class="text-muted mb-4">
+                    Productos especiales para disfrutar durante diferentes temporadas.
+                </p>
+
+                <div class="row g-4">
+                    <!-- Pan de muerto -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/pan-muerto.svg" class="card-img-top product-image"
+                                 alt="Pan de muerto">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Pan de muerto</h3>
+                                <p class="card-text">
+                                    Bizcocho suave aromatizado con flor de azahar y mantequilla,
+                                    decorado con formas de huesos y cubierto de azúcar.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$18.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Pan de muerto', 18, 'Temporada y Especialidades')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Galleta de jengibre -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/galleta-jengibre.svg" class="card-img-top product-image"
+                                 alt="Galleta de jengibre">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Galleta de jengibre</h3>
+                                <p class="card-text">
+                                    Galleta crujiente y especiada con canela, jengibre y clavo,
+                                    decorada con glaseado de colores.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$21.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Galleta de jengibre', 21, 'Temporada y Especialidades')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pan de calabaza -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/pan-calabaza.svg" class="card-img-top product-image"
+                                 alt="Pan de calabaza">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Pan de calabaza</h3>
+                                <p class="card-text">
+                                    Bizcocho húmedo con puré de calabaza de castilla y especias
+                                    cálidas como canela, nuez moscada y jengibre.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$45.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Pan de calabaza', 45, 'Temporada y Especialidades')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pan de higo -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card h-100 shadow-sm">
+                            <img src="img/pan-higo.svg" class="card-img-top product-image"
+                                 alt="Pan de higo">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5">Pan de higo</h3>
+                                <p class="card-text">
+                                    Bizcocho rústico especiado y denso, cargado de higos frescos
+                                    de temporada y trozos de nuez pecana.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="price">$22.00</span>
+                                    <button class="btn btn-primary w-100 mt-3"
+                                            onclick="agregarAlCarrito('Pan de higo', 22, 'Temporada y Especialidades')">
+                                        Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARRITO RÁPIDO ==================== -->
+        <section class="py-5">
+            <div class="container">
+                <div class="cart-box text-center">
+                    <h2 class="h4">Tu pedido</h2>
+                    <p id="mensajeCarrito" class="mb-3">
+                        Tu carrito está vacío.
+                    </p>
+                    <p class="fw-bold">
+                        Productos en carrito:
+                        <span id="cantidadCarrito">0</span>
+                    </p>
+                    <a href="pedidos.html" class="btn btn-primary">
+                        Ir a pedidos
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-2">La Migaja © Derechos reservados</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="mailto:contacto@lamigaja.com" class="footer-link">Correo</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
+    <script src="script2.js"></script>
+</body>
+</html>

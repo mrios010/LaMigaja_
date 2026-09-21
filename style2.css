@@ -1,0 +1,163 @@
+/* =========================================================
+   LA MIGAJA - HOJA 2: CATÁLOGO
+   Bootstrap maneja la estructura y responsividad.
+   Este archivo contiene la personalización visual.
+   ========================================================= */
+
+:root {
+    --miga-crema: #fff8ef;
+    --miga-cafe: #6f4e37;
+    --miga-cafe-oscuro: #4e3426;
+    --miga-acento: #c47a44;
+    --miga-texto: #3f3028;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--miga-texto);
+}
+
+/* Logo de la navegación */
+.logo {
+    width: 42px;
+    height: 42px;
+}
+
+.navbar {
+    background-color: var(--miga-crema) !important;
+}
+
+.navbar-brand strong {
+    color: var(--miga-cafe-oscuro);
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    color: var(--miga-cafe) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--miga-acento) !important;
+}
+
+/* Encabezado */
+.catalogo-header {
+    background: linear-gradient(135deg, #fff8ef, #f7eadc);
+}
+
+.catalogo-header h1 {
+    color: var(--miga-cafe-oscuro);
+}
+
+/* Navegación de categorías */
+.nav-pills .nav-link {
+    border: 1px solid #d8b89b;
+    background-color: #ffffff;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: var(--miga-crema);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--miga-cafe);
+    color: #ffffff !important;
+}
+
+/* Títulos de categorías */
+.section-title {
+    color: var(--miga-cafe-oscuro);
+    border-left: 6px solid var(--miga-acento);
+    padding-left: 12px;
+    margin-bottom: 8px;
+}
+
+/* Tarjetas de productos */
+.product-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(78, 52, 38, 0.15) !important;
+}
+
+.product-image {
+    height: 190px;
+    object-fit: cover;
+    background-color: var(--miga-crema);
+}
+
+.product-card .card-body {
+    padding: 1.2rem;
+}
+
+.product-card h3 {
+    color: var(--miga-cafe-oscuro);
+}
+
+.product-card .card-text {
+    font-size: 0.93rem;
+    line-height: 1.5;
+}
+
+.price {
+    display: block;
+    color: var(--miga-acento);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--miga-cafe);
+    border-color: var(--miga-cafe);
+}
+
+.btn-primary:hover {
+    background-color: var(--miga-cafe-oscuro);
+    border-color: var(--miga-cafe-oscuro);
+}
+
+/* Caja de carrito */
+.cart-box {
+    background-color: var(--miga-crema);
+    border-radius: 18px;
+    padding: 2rem;
+    border: 1px solid #ead8c6;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--miga-cafe-oscuro);
+    color: #ffffff;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #f4c99f;
+}
+
+/* Celular */
+@media (max-width: 767.98px) {
+    .nav-pills {
+        flex-direction: column;
+    }
+
+    .nav-pills .nav-link {
+        text-align: center;
+    }
+
+    .product-image {
+        height: 210px;
+    }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+<rect width="900" height="600" fill="#f2dfc9"/>
+<ellipse cx="450" cy="400" rx="310" ry="80" fill="#d2a679"/>
+<g fill="#b87845">
+<ellipse cx="320" cy="340" rx="120" ry="80"/>
+<ellipse cx="500" cy="320" rx="135" ry="90"/>
+<ellipse cx="620" cy="390" rx="115" ry="72"/>
+</g>
+<g fill="#8d542f">
+<circle cx="300" cy="325" r="12"/><circle cx="350" cy="360" r="10"/>
+<circle cx="470" cy="295" r="12"/><circle cx="535" cy="330" r="9"/>
+<circle cx="600" cy="375" r="11"/><circle cx="650" cy="405" r="9"/>
+</g>
+<text x="450" y="120" text-anchor="middle" font-family="Georgia, serif" font-size="62" font-weight="bold" fill="#4e3426">La Migaja</text>
+<text x="450" y="175" text-anchor="middle" font-family="Arial" font-size="24" fill="#6f4e37">Pan recién horneado</text>
+</svg>
